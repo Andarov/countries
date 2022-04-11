@@ -1,3 +1,47 @@
+:root {
+    --text-color: #111517;
+    --font-family: "Nunito Sans", "Arial", sans-serif;
+    --body-bg-color: #f2f2f2;
+    --header-bg-color: #fff;
+}
+
+/* FONTS */
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 300;
+    src:url("../fonts/nunito-sans-v11-latin-300.woff2") format("woff2"),
+         url("../fonts/nunito-sans-v11-latin-300.woff") format("woff"); 
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 400;
+    src:url("../fonts/nunito-sans-v11-latin-regular.woff2") format("woff2"),
+         url("../fonts/nunito-sans-v11-latin-regular.woff") format("woff"); 
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 600;
+    src:url("../fonts/nunito-sans-v11-latin-600.woff2") format("woff2"),
+         url("../fonts/nunito-sans-v11-latin-600.woff") format("woff"); 
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 800;
+    src:url("../fonts/nunito-sans-v11-latin-800.woff2") format("woff2"),
+         url("../fonts/nunito-sans-v11-latin-800.woff") format("woff"); 
+    font-display: swap;
+  }
+
 html {
     height: 100%;
     scroll-behavior: smooth;
@@ -14,14 +58,13 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: #fff;
-    font-family: "Bebas Neue", "Arial", sans-serif;
+    background-color: var(--body-bg-color);
+    font-family: var(--font-family);
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 2px;
-    color: #1E90FF;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--text-color);
 }
 
 img {
@@ -31,9 +74,9 @@ img {
 
 .container {
     width: 100%;
-    max-width: 1260px;
-    padding-left: 30px;
-    padding-right: 30px;
+    max-width: 1320px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -41,3 +84,4 @@ img {
 .main-content {
     flex-grow: 1;
 } 
+
