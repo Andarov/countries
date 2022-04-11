@@ -1,8 +1,8 @@
 :root {
     --text-color: #111517;
     --font-family: "Nunito Sans", "Arial", sans-serif;
-    --body-bg-color: #f2f2f2;
-    --header-bg-color: #fff;
+    --main-bg-color: #f2f2f2;
+    --body-bg-color: #fff;
 }
 
 /* FONTS */
@@ -72,6 +72,10 @@ img {
     height: auto;
 }
 
+h1, h3 {
+    margin: 0;
+}
+
 .container {
     width: 100%;
     max-width: 1320px;
@@ -81,7 +85,51 @@ img {
     margin-right: auto;
 }
 
+/* HEADER */
+.site-header {
+    display: flex;
+    padding: 24px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-heading {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.dark-mode {
+    border: none;
+    background-color: var(--header-bg-color);
+}
+
+.dark-mode-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark-mode-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/night.svg);
+    margin-right: 8px;
+}
+
+.dark-mode-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+/* MAIN */
 .main-content {
     flex-grow: 1;
+    background-color: var(--main-bg-color);
 } 
 
