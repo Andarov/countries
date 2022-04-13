@@ -238,6 +238,19 @@ select {
 
 dl {
     overflow: hidden;
+    white-space: nowrap;
+}
+
+.description-one {
+    width: 207px;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.description-two {
+    width: 250px;
+    font-size: 16px;
+    line-height: 32px;
 }
 
 dt {
@@ -251,5 +264,108 @@ dd {
     padding: 4px 0;
 }
 
+/* DESCRIPTION */
+.description-site-header {
+    margin-bottom: 80px;
+}
 
+.description-main-content {
+    padding: 0;
+}
+
+/* BACK-BTN */
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--header-bg-color);
+    padding: 10px 33px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    margin-bottom: 80px;
+}
+
+.back-btn:hover {
+    opacity: 0.8;
+}
+
+.back-btn:active {
+    opacity: 0.6;
+}
+
+.back-btn-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    color: var(--text-color);
+}
+
+.back-btn-text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--text-color);
+}
+
+/* ABOUT-COUNTRY */
+.about-country {
+    display: flex;
+    align-items: center;
+}
+
+.about-country-img {
+    width: 560px;
+    height: 401px;
+    margin-right: 120px;
+}
+
+.about-country-context {
+    width: 598px;
+}
+
+.about-country-heading {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 44px;
+    color: var(--text-color);
+    margin: 0;
+    margin-bottom: 23px;
+}
+
+.about-country-text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 68px;
+}
+
+.border {
+    align-items: center;
+}
+
+.border-countries {
+    font-size: 16px;
+    line-height: 32px;
+    margin-right: 16px;
+    font-weight: 600;
+}
+
+.border-country {
+    padding: 5px 28px 4px 27px;
+    background-color: var(--header-bg-color);
+    color: var(--text-color);
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.105);
+    border-radius: 2px;
+}
+
+.border-country:not(:last-child) {
+    margin-right: 16px;
+}
+
+.border-country:hover {
+    opacity: 0.8;
+}
+
+.border-country:active {
+    opacity: 0.6;
+}
 
