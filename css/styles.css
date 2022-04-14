@@ -55,6 +55,11 @@ html {
     box-sizing: inherit;
 }
 
+*:focus {
+    outline: 3px dashed var(--text-color);
+    outline-offset: 3px;
+}
+
 body {
     display: flex;
     flex-direction: column;
