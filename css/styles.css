@@ -448,6 +448,10 @@ dd {
         width: 100%;
         margin-bottom: 24px;
     }
+
+    .about-country-context {
+        padding-bottom: 80px;
+    }
 }
 
 @media only screen and (max-width:520px) {
